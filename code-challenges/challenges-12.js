@@ -74,17 +74,17 @@ const oddFiltration = (arr) => {
 // ------------------------
 
 const cvsFiltration = (arr) => {
-    let hired 
-    function Hired(fullName,tech){
-        this.fullName = fullName;
-        this.tech = tech;
-    }
-    let result = arr.filter(element => element.yearsOfExperience > 4 && element.tech == 'JS')
+    // let hired 
+    // function Hired(fullName,tech){
+    //     this.fullName = fullName;
+    //     this.tech = tech;
+    // }
+    // let result = arr.filter(element => element.yearsOfExperience > 4 && element.tech == 'JS')
        
             
-            let fullname = `${result[0]} ${result[1]}`
-            hired = new Hired(fullname,result[3])
-            return hired
+    //         let fullname = `${result[0]} ${result[1]}`
+    //         hired = new Hired(fullname,result[3])
+    //         return hired
        }
 
          
@@ -102,17 +102,12 @@ const cvsFiltration = (arr) => {
 // ['car', 'boy', 'spy', 'building', 'why', 'dry' ] ==> ['spy', 'why', 'dry']
 // 
 // ------------------------
-let arr = ['car', 'boy', 'spy', 'building', 'why', 'dry' ]
+
 const vowelsFiltration = (arr) => {
-  let result = arr.filter(element => element =! (/^[aeiou]$/i))
-    return result
-    // function vowelTest(s) {
-    //     return (/^[aeiou]$/i).test(s);
-    //   }
-    //   return result;
-    // write your code here
-} 
-vowelsFiltration(arr)
+//   let result = arr.filter(element => element =! (/^[aeiou]$/i))
+//     return result
+
+}
 // make readme file adjustments
 // 4) ---------------------
 //
@@ -130,16 +125,16 @@ vowelsFiltration(arr)
 
 const skillComparison = (arr1, arr2) => {
 
-let arr4 = [];
+// let arr4 = [];
     
-    let arr3 = arr1.filter(element => {
-       if (arr1.includes(element) && arr2.includes(element))
-       {
-        arr4.push(element)
-       }
+//     let arr3 = arr1.filter(element => {
+//        if (arr1.includes(element) && arr2.includes(element))
+//        {
+//         arr4.push(element)
+//        }
            
-    }) 
-    return arr3
+//     }) 
+//     return arr3
 
 }
 
