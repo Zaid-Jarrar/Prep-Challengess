@@ -74,17 +74,11 @@ const oddFiltration = (arr) => {
 // ------------------------
 
 const cvsFiltration = (arr) => {
-    // let hired 
-    // function Hired(fullName,tech){
-    //     this.fullName = fullName;
-    //     this.tech = tech;
-    // }
-    // let result = arr.filter(element => element.yearsOfExperience > 4 && element.tech == 'JS')
-       
-            
-    //         let fullname = `${result[0]} ${result[1]}`
-    //         hired = new Hired(fullname,result[3])
-    //         return hired
+    let hired = arr.filter((element) => element.yearsOfExperience > 4 && element.firstName != null && element.LastName != null);
+    return hired.map((element2) => {
+      return { fullName: `${element2.firstName} ${element2.LastName}`, tech: element2.tech };
+    });
+
        }
 
          
@@ -104,9 +98,10 @@ const cvsFiltration = (arr) => {
 // ------------------------
 
 const vowelsFiltration = (arr) => {
-//   let result = arr.filter(element => element =! (/^[aeiou]$/i))
-//     return result
-
+    return arr.filter((element) =>
+    element.indexOf('u') == -1 && element.indexOf('e') == -1 && element.indexOf('o') == -1 &&
+    element.indexOf('i') == -1 &&element.indexOf('a') == -1
+    );
 }
 // make readme file adjustments
 // 4) ---------------------
@@ -124,17 +119,11 @@ const vowelsFiltration = (arr) => {
 // ------------------------
 
 const skillComparison = (arr1, arr2) => {
-
-// let arr4 = [];
     
-//     let arr3 = arr1.filter(element => {
-//        if (arr1.includes(element) && arr2.includes(element))
-//        {
-//         arr4.push(element)
-//        }
-           
-//     }) 
-//     return arr3
+    let speicalSkills = arr1.filter((element) => 
+    !arr2.includes(element)).concat(arr2.filter((element) => 
+    !arr1.includes(element)));
+    return speicalSkills;
 
 }
 
