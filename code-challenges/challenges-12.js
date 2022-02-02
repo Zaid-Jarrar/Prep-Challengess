@@ -20,7 +20,6 @@ const oddFiltration = (arr) => {
 
        return result 
             
-        
     }
 
     // write your code here
@@ -74,18 +73,12 @@ const oddFiltration = (arr) => {
 // ------------------------
 
 const cvsFiltration = (arr) => {
-
     let hired = arr.filter((element) => element.yearsOfExperience > 4 && element.firstName != null && element.LastName != null);
     return hired.map((element2) => {
       return { fullName: `${element2.firstName} ${element2.LastName}`, tech: element2.tech };
     });
-            
+
        }
-
-   
-         
-
-    
     // write your code here
 
 
@@ -121,10 +114,11 @@ const vowelsFiltration = (arr) => {
 
 const skillComparison = (arr1, arr2) => {
 
-let speicalSkills = arr1.filter((element) => 
-!arr2.includes(element)).concat(arr2.filter((element) => 
-!arr1.includes(element)));
-return speicalSkills;
+    
+    let speicalSkills = arr1.filter((element) => 
+    !arr2.includes(element)).concat(arr2.filter((element) => 
+    !arr1.includes(element)));
+    return speicalSkills
 
 }
 
