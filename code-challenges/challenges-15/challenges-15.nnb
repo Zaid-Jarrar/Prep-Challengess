@@ -24,7 +24,7 @@
         {
             "language": "javascript",
             "source": [
-                "\n\n    const storage = {};\n    for(let i of arr){\n        if (storage[i]){//if the (value) of the key exists in the object , add one to the value 3:1/ 3 key /1 value \n            console.log(storage[i]);// = 1\n            storage[i]++\n            console.log(storage[i]);// = 1+1.....\n        }\n        else {\n            storage[i] = 1}//if the key doesnt not exist in the object add a key value pair //{3:1}\n            // console.log(storage)\n    }\n    let occurences = Object.values(storage); // to give out the values of the object in an array [1,1,3]\n    console.log(occurences)\n    let max = Math.max(...occurences)// give out the highest number of [1,1,3] and get rid of the array\n    return arr.length - max\n    \n"
+                "\n\n    const storage = {};\n    for(let i of arr){\n        if (storage[i]){\n            console.log(storage[i]);\n            storage[i]++\n            console.log(storage[i]);\n        }\n        else {\n            storage[i] = 1}\n          \n    }\n    let occurences = Object.values(storage); \n    console.log(occurences)\n    let max = Math.max(...occurences)\n    return arr.length - max\n    \n"
             ],
             "outputs": []
         },
