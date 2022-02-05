@@ -27,6 +27,7 @@ const LastWord = (str) => {
         return str.slice(lastSpace + 1)
 
     }
+    
 }
 
 // 2) ---------------------
@@ -41,8 +42,7 @@ const LastWord_2 = (str) => {
     let arr = str.split(' ');
     let lastWord = arr[arr.length - 1];
     return lastWord
-
-
+    // write your code here
 }
 
 // 3) ---------------------
@@ -55,11 +55,10 @@ const LastWord_2 = (str) => {
 // Ex: "I was there 3000 years ago" ==> "We were there 3000 years ago"
 // Ex: "I am Venom" ==> "We are Venom"
 //
-// ------------------------ if (str.indexOf('I') != -1) {
-//   console.log(str.splice(0,1,"We"))  
-// }
+// ------------------------
 
 const replaceWords = (str) => {
+
     let removed = [];
     let stringArray = str.split(' ');
     if (stringArray[0] = "I") {
@@ -75,10 +74,8 @@ const replaceWords = (str) => {
 
     return stringArray.join(" ")
 
-
+    // write your code here
 }
-
-
 
 // 4) ---------------------
 // 
@@ -117,9 +114,6 @@ const arrToStr = (arr) => {
 // ------------------------
 
 const letterCounter = (str) => {
-
-
-
     let words = [];
     words = str.split(' ')
     let result = '';
@@ -153,6 +147,8 @@ const letterCounter = (str) => {
       */
 
     return result;
+
+    // write your code here
 }
 
 
