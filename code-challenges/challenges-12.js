@@ -77,8 +77,7 @@ const cvsFiltration = (arr) => {
     return hired.map((element2) => {
       return { fullName: `${element2.firstName} ${element2.LastName}`, tech: element2.tech };
     });
-
-       }
+}
     // write your code here
 
 
